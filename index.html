@@ -3,74 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxin-g</title>
+    <title>Boom-box KE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Add Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    
+
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/boxing-glove.png" type="image/x-icon">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <div class="logo"></div> BOX KING
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts">CONTACTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-danger">Sign up</button>
-                    </li>
-                </ul>
-            </div>
+<body style="background-color: #5b5656;">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand me-2" href="https://mdbgo.com/">
+            <img
+              src="images/boxing-glove.png" height="30"  alt="MDB Logo" loading="lazy" style="margin-top: -1px"
+            /> Maithy-a
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link navbar-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-link" href="#">Contact</a>
+              </li> 
+              <li class="nav-item ms-3">
+                <div class="d-flex justify-content-center align-items-center">
+                  <button data-mdb-ripple-init type="button" class="btn btn-red me-3">Login</button>
+                  <button data-mdb-ripple-init type="button" class="btn btn-red">Sign up</button>
+                </div> 
+              </li>  
+            </ul>
+          </div>
         </div>
     </nav>
+      
+<!-- Carousel wrapper -->
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">  
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
-    <!-- Header Section -->
-    <header class="header text-center text-white d-flex align-items-center justify-content-center">
-        <div>
-            <p class="display-4"><b>FIGHT LIKE A</b></p>
-            <p class="display-1 text-danger"><b>CHAMPION!</b></p>
+    <!-- Inner -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/Boy fight.jpg" class="d-block w-100" alt="Boy Fight" />
+            <div class="carousel-caption d-block">
+                <p class="display-4"><b>FIGHT LIKE A</b></p>
+                <p class="display-1 text-danger"><b>CHAMPION !</b></p>
+                <p class="display-9 "><b>~ TRAIN WITH THE BEST ~</b></p>
+            </div>
         </div>
-    </header>
-
-    <!-- Services Section -->
-    <div class="services container text-center my-5">
-        <div class="row">
-            <div class="col-md-4 holder">
-                <div class="image-1 mx-auto mb-3"></div>
-                <p>Cross Fit</p>
+        <div class="carousel-item">
+            <img src="images/boxing-6771969_1280.jpg" class="d-block w-100" alt="Boxing" />
+            <div class="carousel-caption d-block">
+                <p class="display-1 text-danger"><b>OUR STORY</b></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate similique natus blanditiis ducimus sequi at ipsa architecto omnis officia dolorem rem perspiciatis veniam ad repellendus deserunt, nihil repellat sint ratione!.</p>
+                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-ripple-init data-bs-ripple-color="dark">Primary</button>
             </div>
-            <div class="col-md-4 holder">
-                <div class="image-2 mx-auto mb-3"></div>
-                <p>Weight</p>
-            </div>
-            <div class="col-md-4 holder">
-                <div class="image-3 mx-auto mb-3"></div>
-                <p>Exercise</p>
+        </div>
+        <div class="carousel-item">
+            <img src="images/young-woman-1333600_1280.jpg" class="d-block w-100" alt="Woman Reading a Book" />
+            <div class="carousel-caption d-block">
+                <p class="display-1 text-danger"><b>OUR FACILITIES</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus laudantium eligendi nobis optio perferendis eveniet maxime, architecto porro id excepturi quidem eos ipsam deserunt laborum. Voluptatibus rem dolorem quam aliquam.</p>
             </div>
         </div>
     </div>
+    <!-- Inner -->
 
-    <!-- About Section -->
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Carousel wrapper -->
+    <section class="services container text-center my-5">
+        <div class="card shadow-sm p-4">
+            <div class="row">
+                <div class="col-md-4 holder">
+                    <div class="image-1 mx-auto mb-3"></div>
+                    <p>Cross Fit</p>
+                </div>
+                <div class="col-md-4 holder">
+                    <div class="image-2 mx-auto mb-3"></div>
+                    <p>Weight</p>
+                </div>
+                <div class="col-md-4 holder">
+                    <div class="image-3 mx-auto mb-3"></div>
+                    <p>Exercise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="my-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="container_img"></div>
+                    <div class="container_img" style="background-image: url(images/Girl\ fight.jpg); height:450px; border-radius: 12px;" ></div>
                 </div>
                 <div class="col-md-6">
                     <h1>HOW WE GOT STARTED IN THIS BUSINESS</h1>
@@ -82,39 +137,149 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white py-5">
+    <section id="services" class="my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <p>READY FOR YOUR <span class="text-danger">NEXT</span> LESSON?</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/maithya" target="_blank">
-                                <i class="fab fa-linkedin fa-2x text-white"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="mailto:maithyabon2@gmail.com" target="_blank">
-                                <i class="fas fa-envelope fa-2x text-white"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/Maithy-a" target="_blank">
-                                <i class="fab fa-github fa-2x text-white"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <p>YourDomain.com | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms & Conditions</a></p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
             </div>
         </div>
-    </footer>
+    </section> 
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #520404">
+<div class="container p-4 pb-0">
+    <section class="">
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">BOOM BOX KE</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugit ipsum aspernatur maxime illo voluptatem accusantium quaerat earum corporis! Optio doloribus quis, cumque nulla aspernatur quam ullam dolorum adipisci natus!
+                </p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p><a class="text-white link">Suplement Products</a></p>
+                <p><a class="text-white link">Personal Trainer</a></p>
+                <p><a class="text-white link">Weight lifting</a></p>
+                <p><a class="text-white link">Cross fit</a></p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                <p><a class="text-white link">Your Account</a></p>
+                <p><a class="text-white link">Become an Affiliate</a></p>
+                <p><a class="text-white link">Careers</a></p>
+                <p><a class="text-white link">Help</a></p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact us</h6>
+                <p><i class="fas fa-home mr-3"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-envelope mr-3"></i> maithya@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +2541234567899</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-3">
+
+    <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <div class="p-3">
+                    © <span id="currentYear"></span> Copyright:
+                    <a class="text-white" href="https://github.com/Maithy-a">Maithya.com</a>
+                </div>
+                <script>
+                    document.getElementById("currentYear").textContent = new Date().getFullYear();
+                </script>
+            </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+</div>
+</footer>
+<!-- Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- MDB JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+    <script>
+        // Initialization for ES Users
+        import { Carousel, initMDB } from "mdb-ui-kit";
+
+        initMDB({ Carousel });
+    </script>
 </body>
 </html>
