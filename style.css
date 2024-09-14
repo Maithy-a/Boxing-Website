@@ -98,21 +98,3 @@
       border-bottom-right-radius: .3rem;
   }
 }
-
-@media (max-width: 576px) {
-  .btn-floating {
-      font-size: 1.25rem; 
-  }
-
-  .form-outline input,
-  .form-outline label {
-      font-size: 0.875rem; 
-  }
-}
-
-@media (min-width: 576px) {
-  .form-outline input,
-  .form-outline label {
-      font-size: 1rem; 
-  }
-}
