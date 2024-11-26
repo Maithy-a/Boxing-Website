@@ -1,216 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boom-box KE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>BBOXING</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    
-     <!-- Bootstrap Icons -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Add MDB CSS in the head section -->
+    <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@6.0.0/dist/css/mdb.min.css" rel="stylesheet">
 
+    <!-- Add MDB JS just before the closing body tag -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@6.0.0/dist/js/mdb.min.js"></script>
+
+    <!--Stylesheet css-->
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/boxing-glove.png" type="image/x-icon">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
-<body style="background-color: #5b5656;">
-    <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <!-- Navbar brand -->
-          <a class="navbar-brand me-2" href="https://mdbgo.com/">
-            <img
-              src="images/boxing-glove.png" height="30"  alt="MDB Logo" loading="lazy" style="margin-top: -1px; width: 50px; height: 50px; border-radius: 50%;"
-            /> Maithy-a
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link navbar-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-link" href="#">Contact</a>
-              </li> 
-              <li class="nav-item ms-3">
-                <div class="d-flex justify-content-center align-items-center">
-                  <a onclick="window.location.href='auth.html'" class="btn btn-red me-3" data-mdb-ripple-init>Signup for free</a>
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="#">BM<span>aithy-a</span></a>
 
-                  <a onclick="window.location.href='auth.html'" class="btn btn-red me-3" data-mdb-ripple-init>Login here</a>
+            <!-- Navbar Toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                </div> 
-              </li>  
-            </ul>
-          </div>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
     </nav>
-      
-<section id="home" class="my-5">
-    <!-- Carousel wrapper -->
-<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">  
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
 
-    <!-- Inner -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="images/Boy fight.jpg" class="d-block w-100" alt="Boy Fight" />
-            <div class="carousel-caption d-block">
-                <p class="display-4"><b>FIGHT LIKE A</b></p>
-                <p class="display-1 text-danger"><b>CHAMPION !</b></p>
-                <p class="display-9 "><b>~ TRAIN WITH THE BEST ~</b></p>
-               
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="images/boxing-6771969_1280.jpg" class="d-block w-100" alt="Boxing" />
-            <div class="carousel-caption d-block">
-                <p class="display-1 text-danger"><b>OUR STORY</b></p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate similique natus blanditiis ducimus sequi at ipsa architecto omnis officia dolorem rem perspiciatis veniam ad repellendus deserunt, nihil repellat sint ratione!.</p>
-                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-ripple-init data-bs-ripple-color="dark">Primary</button>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="images/young-woman-1333600_1280.jpg" class="d-block w-100" alt="Woman Reading a Book" />
-            <div class="carousel-caption d-block">
-                <p class="display-1 text-danger"><b>OUR FACILITIES</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus laudantium eligendi nobis optio perferendis eveniet maxime, architecto porro id excepturi quidem eos ipsam deserunt laborum. Voluptatibus rem dolorem quam aliquam.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Inner -->
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-<!-- Carousel wrapper -->
-</section>
 
-<section id="about" class="my-5">
-        <div class="container">
+    <section id="Home">
+        <div id="bootstrap-gallery-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <!-- Carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/boxing-6771969_1280.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption">
+                        <h2>WELCOME</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, commodi voluptatum
+                            nihil in, autem, ut nisi deserunt est aperiam saepe reprehenderit ipsa quisquam provident
+                            maxime. Facere cumque quis obcaecati id.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/boxing-gloves-3659609_640.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption">
+                        <h2>OUR TRAINERS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nesciunt ad ex laborum,
+                            tempore vitae placeat at nisi iure veritatis quibusdam hic consectetur ullam aut illo
+                            eligendi? Labore, quidem iste!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Girl fight.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption">
+                        <h2>WOMEN IN BOXING</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quasi animi quo libero dicta
+                            dolores quis nam, repellat fuga tenetur officia reprehenderit numquam magni dolor ea sint
+                            minus! Accusamus, repellat.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Boy fight.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption">
+                        <h2>OUR CHAMPION</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quo asperiores culpa,
+                            doloremque rerum minima animi inventore nesciunt in. Eius, dolor impedit! Odio ipsa error
+                            laudantium a beatae provident iste?</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bootstrap-gallery-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bootstrap-gallery-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- SVG Icon -->
+        <svg fill="#f0f0f0" version="1.1" id="scrollIcon" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="178px" height="178px"
+            viewBox="-42.03 -42.03 384.28 384.28" xml:space="preserve" transform="rotate(180)" stroke="#f0f0f0"
+            stroke-width="4.203108">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <g>
+                    <path
+                        d="M299.201,93.188c-14.688-25.704-29.988-50.184-43.452-76.5c-3.06-6.12-12.852-4.284-14.688,1.836 c-7.345,26.316-16.524,58.14-15.301,85.068c0,6.12,6.732,7.344,10.404,4.284c0.612,0.612,1.836,0.612,3.061,0.612 c6.731-0.612,13.464-1.836,19.584-2.448c22.031,55.692,39.779,152.388-44.677,158.508c-8.567,0.612-15.3-1.224-20.195-4.896 c11.628-9.792,21.42-22.031,26.315-36.107c6.732-18.36-6.731-57.528-31.824-46.512c-20.195,9.18-24.479,45.899-20.808,64.26 c1.224,5.508,3.06,10.403,4.896,14.688c-1.837,1.225-3.061,1.836-4.896,3.061c-15.912,9.18-34.883,13.464-53.244,12.852 c-13.464-0.612-21.42-7.956-26.316-17.748c16.524-8.567,29.988-22.032,33.66-36.107c7.344-29.988-31.212-49.572-47.124-20.196 c-7.344,13.464-8.568,32.436-4.284,48.96c-0.612,0.612-1.836,0.612-2.448,1.224c-52.632,21.42-68.544-45.288-38.556-78.336 c2.448-3.06-0.612-7.956-4.284-5.508c-36.108,25.704-33.048,80.784,8.568,98.532c11.016,4.896,26.928,3.06,41.616-1.836 c6.732,13.464,17.748,23.868,33.66,25.704c23.868,3.06,51.408-3.673,73.44-17.137c12.852,10.404,31.212,12.853,50.184,8.568 c80.172-15.912,65.484-113.832,42.228-171.972c6.12-0.612,11.629-0.612,17.748-0.612 C297.978,105.427,302.261,98.083,299.201,93.188z M83.166,240.067c-0.612-4.283-1.224-8.567-1.224-12.852 c0-6.732,1.224-13.464,3.06-19.584c4.284-14.688,29.988-9.792,22.032,9.792C102.138,226.603,92.958,234.559,83.166,240.067z M180.473,229.664c0-8.568,3.673-39.168,16.524-39.78c9.792-0.612,9.792,26.316,9.18,30.6c-2.447,11.629-11.016,21.42-21.42,28.765 C181.697,243.127,180.473,236.395,180.473,229.664z M252.077,43.615c8.568,15.912,17.748,31.212,26.928,46.512 c-12.852,1.836-25.704,4.284-37.943,7.344C246.569,80.947,249.018,61.975,252.077,43.615z">
+                    </path>
+                </g>
+            </g>
+        </svg>
+
+    </section>
+
+    <section id="About" class="parallax">
+        <h1>ABOUT US</h1>
+    </section>
+    <section id="Services">
+        <h1>OUR SERVICES</h1>
+    </section>
+    <section id="Contact">
+        <h1>REACH OUT </h1>
+    </section>
+
+    <footer style="background-color: #ff2200; color: white;">
+        <div class="container p-4">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="container_img" style="background-image: url(images/Girl\ fight.jpg); height:450px; border-radius: 12px; background-position: center; background-size: cover; background-repeat: no-repeat;" ></div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h5 class="mb-3 text-dark"> The BB<i class="bi bi-scooter"></i>M & BMaithy-a </h5>
+                    <img src="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                        voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <h1>HOW WE GOT STARTED IN THIS BUSINESS</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro facilis quisquam commodi unde ipsam quis corrupti nobis vel vitae aliquid molestiae ducimus, quas maxime nisi? Deserunt tempora cupiditate laudantium?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro facilis quisquam commodi unde ipsam quis corrupti nobis vel vitae aliquid molestiae ducimus, quas maxime nisi? Deserunt tempora cupiditate laudantium?</p>
-                    <button class="btn btn-danger">Sign Up</button>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3 text-dark">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1">
+                            <a href="#Home">HOME</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#About">ABOUT</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#Services">PRICING</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#Contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-1 text-dark">OPERATION HOURS</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Mon - Fri:</td>
+                                <td>8am - 11pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sat - Sun:</td>
+                                <td>8am - 1am</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-</section>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="disclaimer">Designed & Created with love ♡ by <a href="https://github.com/Maithy-a"
+                    target="_blank">BMaithy-a</a></p>
 
-
-<section id="">
-    
-</section>
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Maithya" data-description="Liked my work? Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- Footer -->
-<footer class="text-center text-lg-start text-white" style="background-color: #520404">
-<div class="container p-4 pb-0">
-    <section class="">
-        <div class="row">
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">BOOM BOX KE</h6>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugit ipsum aspernatur maxime illo voluptatem accusantium quaerat earum corporis! Optio doloribus quis, cumque nulla aspernatur quam ullam dolorum adipisci natus!
-                </p>
-            </div>
-
-            <hr class="w-100 clearfix d-md-none" />
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p><a class="text-white link">Suplement Products</a></p>
-                <p><a class="text-white link">Personal Trainer</a></p>
-                <p><a class="text-white link">Weight lifting</a></p>
-                <p><a class="text-white link">Cross fit</a></p>
-            </div>
-
-            <hr class="w-100 clearfix d-md-none" />
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-                <p><a class="text-white link">Your Account</a></p>
-                <p><a class="text-white link">Become an Affiliate</a></p>
-                <p><a class="text-white link">Careers</a></p>
-                <p><a class="text-white link">Help</a></p>
-            </div>
-
-            <hr class="w-100 clearfix d-md-none" />
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact us</h6>
-                <p><i class="fas fa-home mr-3"></i> Nairobi, Kenya</p>
-                <p><i class="fas fa-envelope mr-3"></i> maithya@gmail.com</p>
-                <p><i class="fas fa-phone mr-3"></i> +2541234567899</p>
-            </div>
         </div>
-    </section>
+        <!-- Copyright -->
+    </footer>
 
-    <hr class="my-3">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-7 col-lg-8 text-center text-md-start">
-                <div class="p-3">
-                    © <span id="currentYear"></span> Copyright:
-                    <a class="text-white" href="https://github.com/Maithy-a">Maithya.com</a>
-                </div>
-                <script>
-                    document.getElementById("currentYear").textContent = new Date().getFullYear();
-                </script>
-            </div>
-            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-google"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
-</div>
-</footer>
-<!-- Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- MDB JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+    <!--Custom JS-->
+    <script src="script.js"></script>
 
-    <script>
-        // Initialization for ES Users
-        import { Carousel, initMDB } from "mdb-ui-kit";
-
-        initMDB({ Carousel });
-    </script>
 </body>
+
 </html>
