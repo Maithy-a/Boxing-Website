@@ -12,9 +12,8 @@ body {
 }
 #Home {
   position: relative;
-}
-.container-fluid {
   user-select: none;
+  cursor: pointer;
 }
 
 /*----Navigation---*/
@@ -77,11 +76,13 @@ body {
   height: 100vh;
   width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
-.carousel-caption h2 {
+.carousel-caption h1 {
   color: red;
   font-weight: 900;
+  line-height: 2.5rem;
   margin-bottom: 10px;
 }
 
@@ -111,9 +112,7 @@ body {
   .carousel-item img {
     height: 65vh;
   }
-  
 }
-
 
 #scrollIcon {
   position: absolute;
@@ -144,6 +143,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-clip: border-box;
   height: 100vh;
 }
 
@@ -167,7 +167,8 @@ section h1 {
   color: white;
   font-weight: 900;
 }
-
+#About {
+}
 /* Footer */
 
 .disclaimer {
