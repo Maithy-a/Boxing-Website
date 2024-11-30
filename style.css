@@ -109,6 +109,7 @@ section {
 #Home {
   background-image: url(assets/images/Champion.jpg);
   background-position: center;
+  background-clip: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 70px;
@@ -208,29 +209,6 @@ section {
   position: relative;
 }
 
-/*
-.home-socials .icon-content .tooltip {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: hsla(0, 0%, 100%, 0.475);
-  color: #000;
-  padding: 6px 10px;
-  border-radius: 5px;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 14px;
-  transition: all 0.3s ease-in-out;
-  font-weight: bold;
-}
-
-.home-socials .icon-content:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: -50px;
-}
-*/
-
 /* Social link styling */
 .home-socials .icon-content .link {
   display: flex;
@@ -256,17 +234,6 @@ section {
     flex-direction: row;
     justify-content: center;
   }
-/*
-  .home-socials .icon-content .tooltip {
-    left: 50%;
-    top: -40px;
-    transform: translateX(-50%);
-  }
-
-  .home-socials .icon-content:hover .tooltip {
-    left: 50%;
-     Keep tooltip centered
-  } */
 }
 
 .home-socials .icon-content .link[data-social="instagram"]:hover {
@@ -284,41 +251,6 @@ section {
 .home-socials .icon-content .link[data-social="telegram"]:hover {
   color: #0088cc;
 }
-
-/*SCROLL DOWN icon
-
-#scrollIcon {
-  content: "down";
-  position: absolute;
-  bottom: 0PX;
-  cursor: pointer;
-  z-index: 1055;
-  padding: 0 20px;
-  font-size: 1.8rem; 
-  transition: color 0.5s;
-  color: var(--primary-color);
-  animation: bounce 2s infinite ease-in-out;
-}
-
-#scrollIcon:hover{
-  animation-play-state: paused; 
-  color: var(--secondary-color);
-}
-
-
-/* Bounce animation keyframes 
-@keyframes bounce {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-10px) rotate(0deg);
-  }
-}
-*/
 
 /* NAVBAR MEDIA QUERIES */
 
@@ -423,3 +355,4 @@ section {
   }
  
 }
+
