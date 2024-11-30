@@ -41,7 +41,7 @@ header {
 .logo {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
-  font-style:normal;
+  font-style: normal;
   text-decoration: none;
   color: var(--text-color);
 }
@@ -129,7 +129,8 @@ section {
   font-style: oblique;
   width: 85%;
 }
-#Home p span{
+
+#Home p span {
   font-size: large;
 }
 
@@ -339,7 +340,7 @@ section {
     transition-delay: calc(0.15s * var(--i));
   }
 
-  #Home{
+  #Home {
     padding-bottom: 20px;
   }
 }
@@ -353,6 +354,5 @@ section {
   .light:after {
     width: 120px;
   }
- 
-}
 
+}
