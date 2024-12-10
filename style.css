@@ -136,7 +136,7 @@ section {
 
 /*BUTTON*/
 
-.btn {
+.light {
   position: relative;
   text-align: center;
   display: flex;
@@ -150,7 +150,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
+.light:hover {
   transform: translateY(5px);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.676);
 }
@@ -208,6 +208,7 @@ section {
 
 .home-socials .icon-content {
   position: relative;
+  font-size: 18px;
 }
 
 /* Social link styling */
@@ -224,7 +225,10 @@ section {
 }
 
 .home-socials .icon-content .link:hover {
-  box-shadow: 3px 2px 45px 0px var(--shadow);
+  transform: translateY(2px);
+  font-size: 13px;
+  transition: .3s;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.676);
 }
 
 /* Responsiveness */
@@ -241,16 +245,16 @@ section {
   color: #962fbf;
 }
 
-.home-socials .icon-content .link[data-social="pinterest"]:hover {
-  color: #bd081c;
+.home-socials .icon-content .link[data-social="github"]:hover {
+  color: #000;
 }
 
-.home-socials .icon-content .link[data-social="dribbble"]:hover {
-  color: #ea4c89;
+.home-socials .icon-content .link[data-social="linkedin"]:hover {
+  color: #0077B5;
 }
 
-.home-socials .icon-content .link[data-social="telegram"]:hover {
-  color: #0088cc;
+.home-socials .icon-content .link[data-social="twitter"]:hover {
+  color: #000;
 }
 
 /* NAVBAR MEDIA QUERIES */

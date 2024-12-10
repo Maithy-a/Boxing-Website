@@ -7,7 +7,7 @@
     <title>BBOXING</title>
 
     <!-- Bootstrap Icons CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--Stylesheet css-->
     <link rel="stylesheet" href="style.css">
@@ -16,6 +16,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    <!--Bootstrap Icon-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -58,38 +63,28 @@
                     <a href="https://www.instagram.com/" aria-label="instagram" data-social="instagram" class="link">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <!--<div class="tooltip">instagram</div>-->
                 </li>
                 <li class="icon-content">
-                    <a href="https://www.pinterest.com/" aria-label="Pinterest" data-social="pinterest" class="link">
-                        <i class="bi bi-pinterest"></i>
+                    <a href="https://www.github.com/" aria-label="Pinterest" data-social="github" class="link">
+                        <i class="bi bi-github"></i>
                     </a>
-                    <!--<div class="tooltip">Pinterest</div>-->
                 </li>
                 <li class="icon-content">
-                    <a href="https://dribbble.com/" aria-label="Dribbble" data-social="dribbble" class="link">
-                        <i class="bi bi-dribbble"></i>
+                    <a href="https://linkedin.com/" aria-label="Dribbble" data-social="linkedin" class="link">
+                        <i class="bi bi-linkedin"></i>
                     </a>
-                    <!--<div class="tooltip">Dribbble</div>-->
                 </li>
                 <li class="icon-content">
-                    <a href="https://telegram.org/" aria-label="Telegram" data-social="telegram" class="link">
-                        <i class="bi bi-telegram"></i>
+                    <a href="https://telegram.org/" aria-label="Telegram" data-social="twitter" class="link">
+                        <i class="bi bi-twitter-x"></i>
                     </a>
-                    <!--<div class="tooltip">Telegram</div>-->
                 </li>
             </ul>
-
-
-
-            <!-- SVG Icon 
-            <i class="bi bi-mouse" id="scrollIcon"></i>
-            -->
-
+            
         </section>
 
         <section id="About">
-
+            
         </section>
 
         <section id="Services">
@@ -99,6 +94,31 @@
         <section id="Contact">
 
         </section>
+
+
+        <script>
+            // Show the Back to Top button when scrolling past the home section
+            window.onscroll = function () {
+                const backToTopButton = document.getElementById("backToTop");
+                const homeSection = document.getElementById("home");
+
+                if (window.scrollY > homeSection.offsetHeight) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            };
+
+            // Scroll to the top smoothly
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+
+        </script>
+
 
     </main>
 
