@@ -32,4 +32,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 For any inquiries or contributions, feel free to reach out:
 - **Author**: Bonface Maithya
-- **Email**: [Maithyabon2@gmil.com]
+- **Email**: [Maithyabon2@gmail.com]
