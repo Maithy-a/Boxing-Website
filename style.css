@@ -38,18 +38,34 @@ header {
   align-items: center;
   z-index: 5;
 }
-
+/* ------------------------------------NAVBRAND-------------------------------------- */
 .logo {
   font-family: "Kaushan Script", cursive;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 25px;
   text-decoration: none;
   color: var(--text-color);
+  transition: color 2s ease; 
 }
 
 .logo span {
-  color: var(--primary-color);
+  color: var(--primary-color); 
+  transition: color 2s ease; 
 }
+
+.logo:hover {
+  color: red; 
+}
+
+.logo:hover span {
+  color: white; 
+}
+
+@media (max-width: 700px) {
+  .logo {
+    font-size: 20px; 
+  }
+}
+
 
 .nav-item {
   position: relative;
@@ -91,6 +107,8 @@ header {
   cursor: pointer;
   display: none;
 }
+
+
 
 #check {
   display: none;
