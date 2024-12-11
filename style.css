@@ -38,31 +38,32 @@ header {
   align-items: center;
   z-index: 5;
 }
+
 /* ------------------------------------NAVBRAND-------------------------------------- */
 .logo {
   font-family: "Kaushan Script", cursive;
   font-size: 25px;
   text-decoration: none;
   color: var(--text-color);
-  transition: color 2s ease; 
+  transition: color 2s ease;
 }
 
 .logo span {
-  color: var(--primary-color); 
-  transition: color 2s ease; 
+  color: var(--primary-color);
+  transition: color 2s ease;
 }
 
 .logo:hover {
-  color: red; 
+  color: red;
 }
 
 .logo:hover span {
-  color: white; 
+  color: white;
 }
 
 @media (max-width: 700px) {
   .logo {
-    font-size: 20px; 
+    font-size: 20px;
   }
 }
 
@@ -367,11 +368,13 @@ section {
   .light {
     width: 130px;
   }
+
   .light:after {
     width: 120px;
   }
 
 }
+
 /* Back to Top Button */
 #top {
   padding: 10px 10px;
@@ -379,9 +382,9 @@ section {
   position: fixed;
   z-index: 1000;
   right: 20px;
-  bottom: 20px; 
+  bottom: 20px;
   opacity: 0;
-  transition: opacity 0.4s ease, transform 0.3s ease; 
+  transition: opacity 0.4s ease, transform 0.3s ease;
 }
 
 #top.show {
@@ -399,6 +402,6 @@ section {
 /* Responsive Design */
 @media (max-width: 700px) {
   #top {
-    right: 5%; 
+    right: 5%;
   }
 }
