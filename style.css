@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Cookie&family=Kaushan+Script&family=Mea+Culpa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 :root {
   --main-color: black;
   --text-color: white;
@@ -7,7 +8,7 @@
   --secondary-color: #a8efff;
   --text-size: 1rem;
   --deco-font-h1: clamp(3rem, 10vw, 8rem);
-  --shadow: box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.1);
   --back-drop: hsla(0, 0%, 100%, 0.475);
 }
 
@@ -112,7 +113,7 @@ section {
   background-clip: border-box;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 #Home h1 {
@@ -151,17 +152,14 @@ section {
 }
 
 .light:hover {
-  transform: translateY(5px);
+  transform: translateY(1px);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.676);
 }
 
 .light::before {
   content: "";
   position: absolute;
-  background-image: conic-gradient(transparent 10deg,
-      var(--primary-color),
-      90deg,
-      transparent 170deg);
+  background-image: conic-gradient(transparent 10deg, var(--primary-color), 90deg, transparent 170deg);
   width: 200%;
   height: 500%;
   animation: rotate 3s linear infinite;
@@ -178,7 +176,7 @@ section {
 }
 
 .light:after {
-  content: "Explore Offers ";
+  content: "Explore Offers";
   position: absolute;
   display: flex;
   justify-content: center;
@@ -208,7 +206,6 @@ section {
 
 .home-socials .icon-content {
   position: relative;
-  font-size: 18px;
 }
 
 /* Social link styling */
@@ -225,10 +222,8 @@ section {
 }
 
 .home-socials .icon-content .link:hover {
-  transform: translateY(2px);
-  font-size: 13px;
-  transition: .3s;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.676);
+  transform: translateY(1px);
+  box-shadow: var(--shadow);
 }
 
 /* Responsiveness */
@@ -351,12 +346,41 @@ section {
 
 /*  HOME BUTTON */
 @media (max-width: 450px) {
-  .btn {
+  .light {
     width: 130px;
   }
-
   .light:after {
     width: 120px;
   }
 
+}
+/* Back to Top Button */
+#top {
+  padding: 10px 10px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1000;
+  right: 20px;
+  bottom: 20px; 
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.3s ease; 
+}
+
+#top.show {
+  opacity: 1;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+#top:hover {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  #top {
+    right: 5%; 
+  }
 }

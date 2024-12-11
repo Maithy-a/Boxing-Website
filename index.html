@@ -94,7 +94,22 @@
         <section id="Contact">
 
         </section>
-
+        <!-- Back to top button -->
+        <i class="bi bi-chevron-up" id="top"></i>
+        <script>
+            window.onscroll = function () {
+                const backToTopButton = document.getElementById('top');
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            };
+            document.getElementById('top').addEventListener('click', function (event) {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
     </main>
 
     <!--Custom JS-->
