@@ -5,6 +5,7 @@
   --main-color: black;
   --text-color: white;
   --primary-color: red;
+  --blue-color:blue;
   --secondary-color: #a8efff;
   --text-size: 1rem;
   --deco-font-h1: clamp(3rem, 10vw, 8rem);
@@ -58,7 +59,7 @@ header {
 }
 
 .logo:hover span {
-  color: white;
+  color: var( --text-color);
 }
 
 @media (max-width: 700px) {
@@ -375,6 +376,10 @@ section {
 
 }
 
+
+
+
+
 /* Back to Top Button */
 #top {
   padding: 10px 10px;
@@ -405,3 +410,82 @@ section {
     right: 5%;
   }
 }
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: #000080;
+  color: gray;
+  padding: 20px 25px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: px;
+}
+
+.footer-column h2 {
+  color: var( --text-color);
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: var( --text-color);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+} 
+
+.footer-bottom .status {
+  display: flex;
+  align-items: center;
+  color: var( --text-color);
+} 
+
+.footer-bottom .status .indicator {
+  width: 8px;
+  height: 8px;
+  background-color:var( --blue-color);
+  border-radius: 50%;
+  margin-right: 8px;
+} 
+
+.footer-bottom .actions button {
+  background: none;
+  border: none;
+  color: gray;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.footer-bottom .actions button:hover {
+  background-color: #333;
+}
+
